@@ -1,4 +1,3 @@
-
 .img-card-styles {
   border: none;
   border-radius: 0.5rem;
@@ -46,7 +45,7 @@
   position: absolute;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(74, 177, 36, 0.5);
 }
 
 .card-back {
@@ -58,19 +57,30 @@
   transform: perspective(1000px) rotateY(0deg);
 }
 
-.card-back.flipped:hover{
-  transform: scale(1.1,1.1)
+.card-back.flipped:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .card-front {
   transform: perspective(1000px) rotateY(0deg);
 }
 
-.card-front:hover{
-  background-color: rgba(255, 255, 255, 0.8);
-transform: scale(1.1, 1.1);
+.card-front:hover {
+  transform: scale(1.1, 1.1);
 }
 
 .card-front.flipped {
   transform: perspective(1000px) rotateY(-180deg);
+}
+
+.card-names {
+  color: white;
+  font-weight: bold;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+
+.card-titles {
+  font-weight: bold;
+  padding: 0.5rem;
 }

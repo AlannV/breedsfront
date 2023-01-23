@@ -50,6 +50,7 @@ export function getBreedsByName(name) {
 
 export function getDetail(id) {
   return async function (dispatch) {
+    console.log(`${REACT_APP_BREEDS_LOCAL_URL}` + id);
     try {
       var json = await axios.get(`${REACT_APP_BREEDS_LOCAL_URL}` + id);
       return dispatch({

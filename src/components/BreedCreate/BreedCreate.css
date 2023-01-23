@@ -1,12 +1,9 @@
-.modal {
-  padding: 1rem 2rem 2rem 2rem;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: 90%;
-  background-color: #fff;
-  border: 1px solid black;
+.create-title {
+  font-size: 1.5rem;
+  font-family: "Oswald", "Roboto";
+  padding: 1rem;
+  background-color: rgba(90, 195, 37, 0.1);
   border-radius: 1rem;
-  flex-wrap: wrap;
 }
 
 .breed-main-container {
@@ -24,25 +21,28 @@
 
 .form {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   padding: 1rem;
   border-radius: 1rem;
   border: 1px solid black;
+  box-shadow: 0 8px 10px -1px rgba(45, 204, 24, 0.9),
+    0 2px 4px -1px rgba(229, 215, 13, 0.6);
 }
 .preview-image-container {
+  margin-top: 0.5rem;
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 1rem;
   border: 1px solid black;
-  margin-top: 0.5rem;
+  box-shadow: 0 8px 10px -1px rgba(45, 204, 24, 0.9),
+    0 2px 4px -1px rgba(229, 215, 13, 0.6);
 }
+
 .create-img {
   width: 250px;
   border-radius: 1rem;
@@ -80,6 +80,7 @@
 .button-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 0.2rem;
 }
 
 .create-top {

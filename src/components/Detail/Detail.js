@@ -42,19 +42,21 @@ export default function Detail(props) {
                 Weight: {breedDetails.weight} kg
               </h4>
               <h4 className="data-breed-data">
-                Life Span: {breedDetails.life_span} años
+                Life Span: {breedDetails.life_span}
               </h4>
-              <h4 className="data-breed-data">
-                Temperaments:
+              <h4 className="data-breed-data">Temperaments:</h4>
+              <ul className="breed-list">
                 {breedDetails.temperaments &&
-                  breedDetails.temperaments.map((el) => el.name).join(", ")}
-              </h4>
+                  breedDetails.temperaments.map((el) => (
+                    <li className="breed-list">{el.name}</li>
+                  ))}
+              </ul>
             </div>
+            <Link to="/home">
+              <button className="reset-btn">Back</button>
+            </Link>
           </div>
         )}
-        <Link to="/home">
-          <button className="reset-btn">Back</button>
-        </Link>
       </div>
     </div>
   );

@@ -11,9 +11,9 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import validateForm from "./helpers/validateForm";
 import "./BreedCreate.css";
+import { Link } from "react-router-dom";
 
-export default function BreedCreate({ setIsOpenCreate }) {
-  let visibility = true;
+export default function BreedCreate() {
   const dispatch = useDispatch();
   const temperaments = useSelector((state) => state.temperaments);
   const countries = useSelector((state) => state.countries);
@@ -93,10 +93,6 @@ export default function BreedCreate({ setIsOpenCreate }) {
     setErrors({});
   }
 
-  function handleVisibility() {
-    setTimeout((visibility = false), 700);
-  }
-
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -127,6 +123,7 @@ export default function BreedCreate({ setIsOpenCreate }) {
   return (
     <div className="breed-main-container">
       <form onSubmit={(e) => handleSubmit(e)} className="form">
+        <p className="create-title">Create a new breed</p>
         <div className="form-section">
           <label htmlFor="name" className="form-titles">
             Name:
@@ -385,15 +382,16 @@ export default function BreedCreate({ setIsOpenCreate }) {
           <button type="reset" className="reset-btn" onClick={handleReset}>
             Reset Fields
           </button>
-          <button onClick={() => setIsOpenCreate(false)} className="reset-btn">
-            Close
-          </button>
+          <Link to="/home">
+            <button className="reset-btn">Go Back</button>
+          </Link>
         </div>
       </form>
-      <div className="preview-image-container">
-        <p className="form-titles">Image preview:</p>
-        {img && <img src={img} className="create-img" />}
-      </div>
+      {img && (
+        <div className="preview-image-container">
+          <img src={img} className="create-img" />
+        </div>
+      )}
     </div>
   );
 }

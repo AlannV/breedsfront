@@ -19,6 +19,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import { v4 } from "uuid";
 
 import BreedCreate from "../BreedCreate/BreedCreate.js";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -74,25 +75,16 @@ export default function Home() {
 
   return (
     <div className="home-main-container">
-      {}
-      {/* <div className="modal"> */}
-      <Modal
-        size="xs"
-        isOpen={isOpenCreate}
-        onRequestClose={() => setIsOpenCreate(false)}
-        className="modal"
-      >
-        <BreedCreate setIsOpenCreate={setIsOpenCreate} />
-      </Modal>
-      {/* </div> */}
       <Header />
       <div className="nav">
-        <button
-          className="create-breed-btn"
-          onClick={() => setIsOpenCreate(true)}
-        >
-          Create your own breed
-        </button>
+        <Link to="/create" element={BreedCreate}>
+          <button
+            className="create-breed-btn"
+            onClick={() => setIsOpenCreate(true)}
+          >
+            Create your own breed
+          </button>
+        </Link>
         <SearchBar setCurrentPage={setCurrentPage} />
       </div>
 

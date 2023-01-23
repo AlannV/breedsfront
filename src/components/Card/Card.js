@@ -29,6 +29,7 @@ export default function Card({
     <div className="card-container">
       <div className="card">
         <div onClick={handleFlip} className={front}>
+          <p className="card-names">{name}</p>
           <img
             className="img-card-styles"
             src={imageUrl}
@@ -39,10 +40,10 @@ export default function Card({
         </div>
 
         <div onClick={handleFlip} className={back}>
-          <p className="card-names">{name}</p>
           <p className="card-titles">Weight: {weight} kg</p>
           <p className="card-titles">Height: {height}</p>
           <p className="card-titles">Life Span: {life_span}</p>
+          <p className="card-titles">...</p>
           {buttonVisibility ? (
             <Link to={"/home/" + id}>
               <button className="reset-btn">View More!</button>
