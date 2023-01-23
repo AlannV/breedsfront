@@ -96,9 +96,9 @@ export default function Home() {
         <div className="filter-dogs-container">
           <div className="left-side">
             <>
-              <label className="labels">Breeds per page: </label>
+              <label className="labels">Breeds p/page: </label>
               <select
-                className="select-style"
+                className="form-input"
                 onChange={(e) => handleBreedsPerPage(e)}
               >
                 <option value="9">9</option>
@@ -111,7 +111,7 @@ export default function Home() {
               <label className="labels">Filter by: </label>
               <label className="labels">Groups:</label>
               <select
-                className="select-style"
+                className="form-input"
                 onChange={(e) => handleFilterByGroups(e)}
               >
                 <option value={0}>Pick One</option>
@@ -127,7 +127,7 @@ export default function Home() {
 
               <label className="labels">Temperament</label>
               <select
-                className="select-style"
+                className="form-input"
                 onChange={(e) => handleFilterByTemperament(e)}
               >
                 <option>Pick One</option>
@@ -144,7 +144,7 @@ export default function Home() {
               <label className="labels">Order By: </label>
 
               <select
-                className="select-style"
+                className="form-input"
                 onChange={(e) => {
                   handleOrderByBreed(e);
                 }}
@@ -155,7 +155,7 @@ export default function Home() {
               </select>
 
               <select
-                className="select-style"
+                className="form-input"
                 onChange={(e) => {
                   handleOrderByWeight(e);
                 }}

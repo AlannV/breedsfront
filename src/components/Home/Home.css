@@ -41,9 +41,21 @@ a {
 }
 
 .right-side {
+  padding-left: 8rem;
 }
 
 .left-side {
+  border: solid 1px green;
+  background-color: rgba(74, 177, 36, 0.5);
+  margin-top: 1.3rem;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .filter-dogs-container {
@@ -62,6 +74,7 @@ a {
   color: white;
   font-weight: 900;
   font-family: "Trebuchet MS";
+  margin-bottom: 0.4rem;
 }
 
 .select-style {

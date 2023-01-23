@@ -255,7 +255,6 @@ export default function BreedCreate() {
           <input
             type="file"
             name="image"
-            placeholder="Imagen... https://..."
             value={input.image}
             onChange={onFileInputChange}
             className="form-input"

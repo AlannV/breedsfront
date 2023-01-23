@@ -41,7 +41,7 @@ export default function Card({
 
         <div onClick={handleFlip} className={back}>
           <p className="card-titles">Weight: {weight} kg</p>
-          <p className="card-titles">Height: {height}</p>
+          <p className="card-titles">Height: {height} cm</p>
           <p className="card-titles">Life Span: {life_span}</p>
           <p className="card-titles">...</p>
           {buttonVisibility ? (

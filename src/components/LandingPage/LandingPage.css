@@ -1,13 +1,11 @@
 .welcome-text {
-  color: blanchedalmond;
-  border-radius: 30px;
-  background-blend-mode: multiply;
+  color: rgb(49, 47, 43);
+
   text-shadow: 5px 5px 5px #4b5320;
-  
 }
 
-.welcome-container{
-  background-color: rgba(255, 255, 255, 0.5);
+.welcome-container {
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 30px;
   padding: 20px;
   margin: 20px;
@@ -15,7 +13,6 @@
 }
 
 .main-container {
-
   background-image: url("https://th.bing.com/th/id/R.d013805907b095bf2f4aeb43e1baddc2?rik=vI6ylgy538EPLw&riu=http%3a%2f%2forig06.deviantart.net%2f5052%2ff%2f2012%2f277%2f0%2f9%2fdoberman_puppy_by_doberman4life-d5gr7tx.jpg&ehk=YD8ddqpRBnx6RQUO1HYuqIz%2fxj5egecM3%2bR3pt6Ir%2bs%3d&risl=&pid=ImgRaw&r=0");
   background-position: center;
   background-repeat: no-repeat;
@@ -23,7 +20,7 @@
 
   display: flex;
   flex-direction: column;
-  
+
   justify-content: center;
   align-items: center;
 
@@ -41,7 +38,7 @@
   pointer-events: none;
 }
 
-.enter-btn{
+.enter-btn {
   background-color: #4b5320;
   color: white;
   border: none;
