@@ -65,6 +65,7 @@
   font-family: "Oswald", "Roboto";
   border-radius: 0.5rem;
   text-indent: 0.5rem;
+  padding: 0.2rem;
 }
 
 .form-input:hover {

@@ -3,20 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 70vw;
-  flex-direction: column;
-}
-
-.header-sub-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-.header-middle {
-  display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .header-left {
@@ -30,7 +17,7 @@
 }
 
 .header-logo {
-  height: 150px;
+  height: 80px;
 }
 
 .create-breed-btn {
@@ -50,4 +37,33 @@
 .create-breed-btn:active {
   background-color: rgba(255, 255, 255, 1);
   transform: scale(1, 1);
+}
+
+.git-container {
+  border: solid 1px green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(248, 250, 248, 0.9);
+  border-radius: 1rem;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-right: 2rem;
+}
+
+.in-container {
+  border: solid 1px green;
+  background-color: rgba(248, 250, 248, 0.9);
+  border-radius: 1rem;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2rem;
+}
+
+.git-container:hover {
+}
+
+.in-container:hover {
 }

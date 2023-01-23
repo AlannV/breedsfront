@@ -84,7 +84,7 @@ export default function Home() {
       <div className="home-sub-container">
         <div className="upper-side"></div>
 
-        <div className="paging-container">
+        <div>
           <Paginado
             setCurrentPage={setCurrentPage}
             currentPage={currentPage}
@@ -164,6 +164,7 @@ export default function Home() {
                 <option value="minToMax">Min to Max</option>
                 <option value="maxToMin">Max to Min</option>
               </select>
+              <br />
 
               <button
                 className="reset-btn"

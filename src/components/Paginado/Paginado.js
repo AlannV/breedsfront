@@ -48,7 +48,7 @@ export default function Paginado({
   }
 
   return (
-    <div>
+    <div className="paging-container">
       <button
         className={style}
         onClick={() => handlePrev()}

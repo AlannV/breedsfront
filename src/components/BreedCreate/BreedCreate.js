@@ -375,11 +375,11 @@ export default function BreedCreate() {
         {errors.origin && <p className="error-msg">Error! {errors.origin}</p>}
 
         <div className="button-container">
-          <button type="submit" className="reset-btn">
-            Create breed
-          </button>
           <button type="reset" className="reset-btn" onClick={handleReset}>
             Reset Fields
+          </button>
+          <button type="submit" className="reset-btn">
+            Create breed
           </button>
           <Link to="/home">
             <button className="reset-btn">Go Back</button>
