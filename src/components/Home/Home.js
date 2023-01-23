@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Modal from "react-modal";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getBreeds,
@@ -13,12 +12,10 @@ import {
 import Card from "../Card/Card";
 import Paginado from "../Paginado/Paginado";
 import "./Home.css";
-import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import SearchBar from "../SearchBar/SearchBar";
 import { v4 } from "uuid";
 
-import BreedCreate from "../BreedCreate/BreedCreate.js";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -35,7 +32,6 @@ export default function Home() {
   const currentBreeds = allBreeds.slice(indexOfFirstBreed, indexOfLastBreed);
 
   useEffect(() => {
-    Modal.setAppElement("body");
     dispatch(getBreeds());
     dispatch(getTemperaments());
     dispatch(getGroups());
@@ -75,7 +71,7 @@ export default function Home() {
     <div className="home-main-container">
       <Header />
       <div className="nav">
-        <Link to="/create" element={BreedCreate}>
+        <Link to="/create">
           <button className="create-breed-btn">Create your own breed</button>
         </Link>
         <SearchBar setCurrentPage={setCurrentPage} />
@@ -108,7 +104,6 @@ export default function Home() {
               </select>
             </>
             <>
-              <label className="labels">Filter by: </label>
               <label className="labels">Groups:</label>
               <select
                 className="form-input"
@@ -141,8 +136,7 @@ export default function Home() {
                 })}
               </select>
 
-              <label className="labels">Order By: </label>
-
+              <label className="labels">Alphabetically:</label>
               <select
                 className="form-input"
                 onChange={(e) => {
@@ -153,7 +147,7 @@ export default function Home() {
                 <option value="asc"> A - Z </option>
                 <option value="des"> Z - A </option>
               </select>
-
+              <label className="labels">Weight:</label>
               <select
                 className="form-input"
                 onChange={(e) => {
@@ -199,9 +193,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="paging-container">
+      {/* <div className="paging-container">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 }
