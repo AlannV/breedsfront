@@ -1,0 +1,132 @@
+.modal {
+  padding: 1rem 2rem 2rem 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 90%;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 1rem;
+  flex-wrap: wrap;
+}
+
+.breed-main-container {
+  background-image: url("https://discountbuildingmaterial.com.au/wp-content/uploads/2021/02/Grass.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.preview-image-container {
+  color: black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  margin-top: 0.5rem;
+}
+.create-img {
+  width: 250px;
+  border-radius: 1rem;
+}
+
+.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-titles {
+  pointer-events: none;
+  margin-bottom: 0.9rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+.form-input {
+  font-family: "Oswald", "Roboto";
+  border-radius: 0.5rem;
+  text-indent: 0.5rem;
+}
+
+.form-input:hover {
+  border-color: #a4cf40;
+  box-shadow: 0 0 1rem #319c6f;
+}
+
+.form-input:focus {
+  border-color: #9ecaed;
+  box-shadow: 0 0 2rem var(--white);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.create-top {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: auto;
+}
+
+.select-selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selected-options {
+  pointer-events: all;
+  user-select: none;
+  list-style: none;
+  font-family: "Oswald", "Roboto";
+  font-size: 0.7rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem;
+}
+
+.selected-options:hover {
+  color: rgb(115, 86, 208);
+  border-color: #9ecaed;
+  box-shadow: 0 0 1rem #9ecaed;
+}
+
+input[type="file"] {
+  border-radius: 15px;
+}
+
+.error-msg {
+  color: red;
+}

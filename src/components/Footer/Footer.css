@@ -1,0 +1,16 @@
+.footer-main-container{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.git-container{
+  margin-right: 2rem;
+}
+
+.in-container{
+  margin-left: 2rem;
+}

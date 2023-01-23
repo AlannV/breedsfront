@@ -1,0 +1,56 @@
+.header-main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  flex-direction: column;
+  
+}
+
+.header-sub-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.header-middle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-left{
+  display: flex;
+  margin-right: 2rem;
+}
+
+.header-right{
+  display: flex;
+  margin-left: 2rem;
+}
+
+.header-logo{
+  height: 150px;
+}
+
+.create-breed-btn {
+  margin-right: 0.5rem;
+  width: 9rem;
+  height: 2.2rem;
+  border: solid 1px green;
+  border-radius: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.create-breed-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.1, 1.1);
+}
+
+.create-breed-btn:active {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1, 1);
+}
+
