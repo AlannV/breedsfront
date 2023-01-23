@@ -389,7 +389,7 @@ export default function BreedCreate() {
       </form>
       {img && (
         <div className="preview-image-container">
-          <img src={img} className="create-img" />
+          <img src={img} className="create-img" alt="breed" />
         </div>
       )}
     </div>

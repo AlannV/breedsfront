@@ -8,7 +8,6 @@ export default function Paginado({
   setCurrentPage,
   currentPage,
 }) {
-  let stop = false;
   const maxPages = Math.ceil(allBreeds / breedsPerPage);
   let style = "small-btn";
   let styleAct = "small-btn-active";

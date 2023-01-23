@@ -28,8 +28,6 @@ export default function Home() {
   const temperaments = useSelector((state) => state.temperaments);
   const groups = useSelector((state) => state.groups);
 
-  const [isOpenCreate, setIsOpenCreate] = useState(false);
-
   const [currentPage, setCurrentPage] = useState(1);
   const [breedsPerPage, setBreedsPerPage] = useState(9);
   const indexOfLastBreed = currentPage * breedsPerPage;
@@ -78,12 +76,7 @@ export default function Home() {
       <Header />
       <div className="nav">
         <Link to="/create" element={BreedCreate}>
-          <button
-            className="create-breed-btn"
-            onClick={() => setIsOpenCreate(true)}
-          >
-            Create your own breed
-          </button>
+          <button className="create-breed-btn">Create your own breed</button>
         </Link>
         <SearchBar setCurrentPage={setCurrentPage} />
       </div>
