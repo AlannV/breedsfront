@@ -381,7 +381,7 @@ export default function BreedCreate() {
           <button type="submit" className="reset-btn">
             Create breed
           </button>
-          <Link to="/home">
+          <Link to="/">
             <button className="reset-btn">Go Back</button>
           </Link>
         </div>

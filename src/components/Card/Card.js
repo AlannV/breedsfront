@@ -45,7 +45,7 @@ export default function Card({
           <p className="card-titles">Life Span: {life_span}</p>
           <p className="card-titles">...</p>
           {buttonVisibility ? (
-            <Link to={"/home/" + id}>
+            <Link to={"/" + id}>
               <button className="reset-btn">View More!</button>
             </Link>
           ) : null}

@@ -28,7 +28,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70vw;
+  width: 80vw;
 }
 
 .upper-side {
@@ -110,4 +110,16 @@ select {
 .reset-btn:active {
   background-color: rgba(255, 255, 255, 1);
   transform: scale(1, 1);
+}
+
+@media screen and (max-width: 800px) {
+  .filter-dogs-container {
+    margin-left: 30px;
+  }
+  .paging-container {
+    width: 80vw;
+  }
+  .right-side {
+    padding-left: 7rem;
+  }
 }

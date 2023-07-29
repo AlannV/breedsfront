@@ -8,6 +8,10 @@
   background-size: cover;
   overflow-y: scroll;
   overflow-x: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-container-detail {
@@ -80,4 +84,11 @@
 .breed-list {
   list-style: none;
   border-bottom: green solid 1px;
+}
+
+@media screen and (max-width: 800px) {
+  .card-container-detail {
+    margin: 5px;
+    width: 500px !important;
+  }
 }

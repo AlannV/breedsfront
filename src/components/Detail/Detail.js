@@ -52,7 +52,7 @@ export default function Detail(props) {
                   ))}
               </ul>
             </div>
-            <Link to="/home">
+            <Link to="/">
               <button className="reset-btn">Back</button>
             </Link>
           </div>
